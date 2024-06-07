@@ -212,6 +212,205 @@ h1 {
     margin-right: 5px; 
 } 
 
+/*Seção sistema de monitoramento*/
+.secao04{
+    display: flex;
+    background-color: #101010;
+    justify-content: center;
+    flex-direction: column;
+    color: #FFFF;
+    font-family: var(--fonte-primaria);
+    text-align: center;
+    gap: 19px;
+    padding: 3% 23% 0 23%;
+}
+
+.texto4{
+    font-weight: 300;
+    font-size: 15px;
+    color: #CDF6F7;
+}
+
+.titulo04{
+    font-weight: 500;
+    font-size: 48px;
+}
+
+.texto4_conteudo{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.objetivo{
+    margin: 60px auto;
+    width: 600px;
+    font-family: var(--fonte-primaria);
+}
+
+.objetivo li{
+    list-style: none;
+    width: 100%;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background: #e2e2e2;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+                -6px -6px 10px -1px rgba(255, 255, 255, 0.17);
+}
+
+.objetivo li label{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+label::before{
+    content: '+';
+    margin-right: 10px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.objetivo .conteudo_objetivo{
+    color: #555;
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.objetivo input[type="radio"]:checked + label + .conteudo_objetivo{
+    max-height: 400px;
+    padding: 10px 10px 20px;
+}
+
+.objetivo input[type="radio"]:checked + label::before{
+    content: '-';
+}
+
+/*CARROSEL*/
+
+.carrosel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    color: var(--cor-texto);
+    margin: 10% 0% 12% 0%;
+}
+
+.slider{
+    position: relative;
+    width: 100%;
+    height: 370px; /*370px*/
+    font-family: var(--fonte-primaria);
+}
+.conteudo06{
+    text-align: center;
+    padding-top: 300px;
+}
+
+.slider p{
+    font-size: 16px;
+    color: var(--cor-texto);
+}
+
+.slider h4{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #16A5A3;
+}
+
+.item{
+    position: absolute;
+    width: 533px;
+    height: 461px;
+    text-align: justify;
+    padding: 2%;
+    transition: 0.5s;
+    left: calc(50% - 280px);
+    top: 0;
+    border-radius: 20px;
+}
+
+#item1{
+    background-image: linear-gradient(to bottom, transparent 0%, var(--cor-primaria) 85%), url(/assets/mergulhador.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#item2{
+    background-image: linear-gradient(to bottom, transparent 0%, var(--cor-primaria) 85%), url(/assets/cientista.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#item3{
+    background-image: linear-gradient(to bottom, transparent 0%, var(--cor-primaria) 85%), url(/assets/medidor_agua.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#item4{
+    background-image: linear-gradient(to bottom, transparent 0%, var(--cor-primaria) 85%), url(/assets/plastico_no_oceano.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+#proximo, #anterior{
+    position: absolute;
+    top: 140%; /*40%*/
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    font-size: xxx-large;
+    font-family: monospace;
+    font-weight: bold;
+    left: 20%;
+    cursor: pointer;
+}
+
+#proximo{
+    left: unset;
+    right: 20%;
+}
+
+@media (max-width: 600px) {
+    .slider{
+        height: 23rem; /*370px*/
+    }
+    .conteudo06{
+        padding-top: 20rem; /*300px*/
+    }
+    .slider p{
+        font-size: 16px; /*16px*/
+        color: var(--cor-texto);
+    }
+    
+    .slider h1{
+        padding-top: 1.87rem; /*30px*/
+        font-size: 20px; /*20px*/
+    }
+    
+    .item{
+        width: 33.31rem; /*533px*/
+        height: 28.81rem; /*461px*/
+        left: calc(50% - 16.9rem);/*50% - 280px*/
+        border-radius: 20px; /*20px*/
+    } 
+}
+
 .body5 {
     background-color: var(--cor-primaria);
     font-family: var(--fonte-primaria);
