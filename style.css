@@ -442,25 +442,25 @@ input[type="radio"]{
 }
 
 #item1{
-    background-image: linear-gradient(to bottom, transparent 0%, var(--cor-primaria) 85%), url(/assets/mergulhador.jpg);
+    background-image: linear-gradient(to bottom, transparent 0%, var(--cor-primaria) 85%), url(mergulhador.jpg);
     background-position: center;
     background-size: cover;
 }
 
 #item2{
-    background-image: linear-gradient(to bottom, transparent 0%, var(--cor-primaria) 85%), url(/assets/cientista.jpg);
+    background-image: linear-gradient(to bottom, transparent 0%, var(--cor-primaria) 85%), url(cientista.jpg);
     background-position: center;
     background-size: cover;
 }
 
 #item3{
-    background-image: linear-gradient(to bottom, transparent 0%, var(--cor-primaria) 85%), url(/assets/medidor_agua.jpg);
+    background-image: linear-gradient(to bottom, transparent 0%, var(--cor-primaria) 85%), url(medidor_agua.jpg);
     background-position: center;
     background-size: cover;
 }
 
 #item4{
-    background-image: linear-gradient(to bottom, transparent 0%, var(--cor-primaria) 85%), url(/assets/plastico_no_oceano.jpg);
+    background-image: linear-gradient(to bottom, transparent 0%, var(--cor-primaria) 85%), url(plastico_no_oceano.jpg);
     background-position: center;
     background-size: cover;
 }
